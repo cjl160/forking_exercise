@@ -11,6 +11,7 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
+    # TODO add another person - anyone you like
     return people
 
 
