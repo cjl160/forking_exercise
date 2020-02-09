@@ -13,9 +13,11 @@ In this practical, you will Fork a repo, extend the code committing to your fork
   selecting the Actions tab and enabling it. The GitHub workflow is a
   new CI/CD tool like Travis but run within GitHub. 
   Make an initial commit altering the comment line in [person.py](person.py)
+
   ```python
-# TODO add another person - anyone you like
+  # TODO add another person - anyone you like
   ```
+
   replacing `anyone you like` with your favourite cartoon character.
 * The programming task is to add a person record for your favourite 
   cartoon character to people dictionary. 
