@@ -9,10 +9,13 @@ In this practical, you will Fork a repo, extend the code committing to your fork
   page, it looks like:
   <img src="https://aru-bioinf-ibds.github.io/images/GitHub_fork_button.png">
   (but hit the one at the top right of the GitHub page!)
-* Once you have forked the repo then turn on the GitHub workflow by
+* Clone the forked repo onto your laptop using command line git as normal.
+* In the original upstream repo create an issue "add XXXXX" where XXXX is your
+  favourite Cartoon character. 
+* Once you have cloned the forked repo then turn on the GitHub workflow by
   selecting the Actions tab and enabling it. The GitHub workflow is a
   new CI/CD tool like Travis but run within GitHub. 
-  Make an initial commit altering the comment line in [person.py](person.py)
+  Make an initial commit altering the comment line in [people.py](people.py)
 
   ```python
   # TODO add another person - anyone you like
@@ -27,7 +30,7 @@ In this practical, you will Fork a repo, extend the code committing to your fork
     This test should fail. Check it does with `pytest`. Once you are
     happy commit the change
   * Add then create your new person in
-    [person.py](person.py)
+    [people.py](people.py)
     making sure that your test works and commit it.
 * The code uses namedtuples for person please see 
   https://pymotw.com/3/collections/namedtuple.html
