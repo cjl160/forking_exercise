@@ -10,10 +10,10 @@ def test_oliver():
 
 
 def test_squanchy():
-    squanchy = setup_people()['squanchy_rick and morty']
-    assert oliver.first_name == 'squanchy'
-    assert oliver.age == 21
-    assert oliver.hobbies == ['squanching']
+    squanchy = setup_people()['squanchy_smith']
+    assert squanchy.first_name == 'squanchy'
+    assert squanchy.age == 21
+    assert squanchy.hobbies == ['squanching','running']
 
 
 
