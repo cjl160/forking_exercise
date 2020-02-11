@@ -11,8 +11,8 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
-    # TODO add another person - muttley
-    return peoplei
+    _add_muttley(people)
+    return people
 
 
 def _add_oliver(people):
@@ -27,6 +27,12 @@ def main():
     people = setup_people()
     print(people)
 
+def _add_muttley(people):
+    """ adds muttley"""
+    new_p = PERSON(first_name='Muttley', surname='Dog',
+                   age=71, pet='Dick Dastardly', hobbies='Laughing')
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
 
 if __name__ == '__main__':
     main()
