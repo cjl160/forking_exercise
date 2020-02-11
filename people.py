@@ -11,7 +11,7 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
-    _add_muttley(people)
+    # TODO add another person - muttley
     return peoplei
 
 
