@@ -8,6 +8,11 @@ def test_oliver():
     assert oliver.age == 21
     assert oliver.hobbies == []
 
+def test_eeyore():
+	eeyore = setup_people()['Eeyore_Milne']
+	assert eeyore.first_name == 'Eeyore'
+	assert eeyore.age == 98
+	assert eeyore.hobbies == ['Being gloomy, eating thistles and sugar cubes, Poohsticks, birthday parties, flowers, stars, sad stories and poems, looking over his hill']
 
 def test_all_keys_match_names():
     for key, person in setup_people().items():
