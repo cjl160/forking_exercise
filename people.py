@@ -11,7 +11,6 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
-    # TODO add another person - Archer
     _add_archer(people)
     return people
 
@@ -28,7 +27,7 @@ def _add_archer(people):
     """Adds Archer"""
     new_p = PERSON(first_name = 'Sterling', surname = 'Archer',
                    age = 36, pet = 'Babou', 
-                   hobbies = ['Drinking', 'Being an ass', 'Super Spy']
+                   hobbies = ['Drinking', 'Being an ass', 'Super Spy'])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
