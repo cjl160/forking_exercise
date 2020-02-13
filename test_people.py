@@ -9,6 +9,13 @@ def test_oliver():
     assert oliver.hobbies == []
 
 
+def test_Batman():
+    Batman = setup_people()['Batman']
+    assert Batman.first_name == 'Batman'
+    assert Batman.age == 21
+    assert Batman.hobbies == ['Justice', 'Seed']
+
+
 def test_all_keys_match_names():
     for key, person in setup_people().items():
         assert key == f'{person.first_name}_{person.surname}'
