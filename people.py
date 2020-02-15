@@ -30,6 +30,7 @@ def _add_road_runner(people):
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
+
 def main():
     """ main function run as script """
     people = setup_people()
