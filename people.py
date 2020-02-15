@@ -24,7 +24,7 @@ def _add_oliver(people):
 
 
 def _add_road_runner(people):
-    """ adds oliver """
+    """ adds Road Runner """
     new_p = PERSON(first_name='Road', surname='Runner',
                    age=71, pet=None, hobbies=['running', 'seed'])
     key = new_p.first_name + '_' + new_p.surname
