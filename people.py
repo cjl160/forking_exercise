@@ -11,6 +11,7 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
+    _add_fry(people)
     # TODO add another person - Fry
     return people
 
@@ -19,6 +20,13 @@ def _add_oliver(people):
     """ adds oliver """
     new_p = PERSON(first_name='Oliver', surname='Smart',
                    age=21, pet='Rat', hobbies=[])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
+def _add_fry(people):
+    """ adds Fry """
+    new_p = PERSON(first_name='Philip', surname='Fry',
+                   age=2040, pet='Nibblonian', hobbies=[])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
