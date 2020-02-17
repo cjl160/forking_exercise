@@ -9,8 +9,8 @@ def test_oliver():
     assert oliver.hobbies == []
 
 def test_fry():
-    fry = setup_people()['philip_fry']
-    assert fry.first_name == 'philip'
+    fry = setup_people()['Philip_Fry']
+    assert fry.first_name == 'Philip'
     assert fry.age == 2040
     assert fry.hobbies == []
 
