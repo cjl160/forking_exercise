@@ -8,6 +8,12 @@ def test_oliver():
     assert oliver.age == 21
     assert oliver.hobbies == []
 
+def test_fry():
+    fry = setup_people()['philip_fry']
+    assert fry.first_name == 'philip'
+    assert fry.age == '2,040'
+    assert fry.hobbies == []
+
 
 def test_all_keys_match_names():
     for key, person in setup_people().items():
