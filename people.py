@@ -26,7 +26,7 @@ def _add_oliver(people):
 def _add_squanchy(people):
     """ adds squanchy """
     new_p = PERSON(first_name='squanchy', surname='smith',
-                   age=21, pet='Rat', hobbies=['squanching','running'])
+                   age=21, pet='Rat', hobbies=['squanching', 'running'])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
