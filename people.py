@@ -11,7 +11,7 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
-    # TODO add another person - anyone you like
+    _add_road_runner(people)
     return people
 
 
@@ -21,6 +21,15 @@ def _add_oliver(people):
                    age=21, pet='Rat', hobbies=[])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
+
+
+def _add_road_runner(people):
+    """ adds Road Runner """
+    new_p = PERSON(first_name='Road', surname='Runner',
+                   age=71, pet=None, hobbies=['running', 'seed'])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
 
 def main():
     """ main function run as script """
