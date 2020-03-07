@@ -11,7 +11,7 @@ def setup_people():
     """
     people = {}
     _add_oliver(people)
-    _add_Bat_man(people)
+    _add_bat_man(people)
     return people
 
 
@@ -23,7 +23,7 @@ def _add_oliver(people):
     people[key] = new_p
 
 
-def _add_Bat_man(people):
+def _add_bat_man(people):
     """ adds oliver """
     new_p = PERSON(first_name='Bat', surname='Man',
                    age=58, pet=None, hobbies=['Justice', 'Seed'])
