@@ -12,6 +12,7 @@ def setup_people():
     people = {}
     _add_oliver(people)
     _add_road_runner(people)
+    _add_squanchy(people)
     return people
 
 
@@ -27,6 +28,14 @@ def _add_road_runner(people):
     """ adds Road Runner """
     new_p = PERSON(first_name='Road', surname='Runner',
                    age=71, pet=None, hobbies=['running', 'seed'])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
+
+def _add_squanchy(people):
+    """ adds squanchy """
+    new_p = PERSON(first_name='squanchy', surname='smith',
+                   age=21, pet='Rat', hobbies=['squanching', 'running'])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
