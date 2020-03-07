@@ -8,11 +8,11 @@ def test_oliver():
     assert oliver.age == 21
     assert oliver.hobbies == []
 
-def test_Bat_man():
+def test_bat_man():
     Bat_man = setup_people()['Bat_Man']
-    assert Bat_man.first_name == 'Bat'
-    assert Bat_man.age == 58
-    assert Bat_man.hobbies == ['Justice', 'Seed']
+    assert bat_man.first_name == 'Bat'
+    assert bat_man.age == 58
+    assert bat_man.hobbies == ['Justice', 'Seed']
 
 
 def test_all_keys_match_names():
