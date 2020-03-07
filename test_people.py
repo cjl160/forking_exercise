@@ -9,6 +9,13 @@ def test_oliver():
     assert oliver.hobbies == []
 
 
+def test_eeyore():
+    eeyore = setup_people()['Eeyore_Milne']
+    assert eeyore.first_name == 'Eeyore'
+    assert eeyore.age == 98
+    assert eeyore.hobbies == ['Being gloomy, eating thistles and sugar cubes, playing Poohsticks, going to birthday parties, flowers, stars, sad stories and poems, looking over his hill']
+
+
 def test_road_runner():
     road_runner = setup_people()['Road_Runner']
     assert road_runner.first_name == 'Road'
@@ -21,8 +28,8 @@ def test_squanchy():
     assert squanchy.first_name == 'squanchy'
     assert squanchy.age == 21
     assert squanchy.hobbies == ['squanching', 'running']
-    
-    
+
+
 def test_all_keys_match_names():
     for key, person in setup_people().items():
         assert key == f'{person.first_name}_{person.surname}'
