@@ -6,7 +6,9 @@ def test_oliver():
     oliver = setup_people()['Oliver_Smart']
     assert oliver.first_name == 'Oliver'
     assert oliver.age == 21
+    assert oliver.pet == 'Rat'
     assert oliver.hobbies == []
+
 
 def test_bat_man():
     bat_man = setup_people()['Bat_Man']
@@ -34,6 +36,14 @@ def test_squanchy():
     assert squanchy.first_name == 'squanchy'
     assert squanchy.age == 21
     assert squanchy.hobbies == ['squanching', 'running']
+
+
+def test_scooby():
+    scooby = setup_people()['Scoobert_Doo']
+    assert scooby.first_name == 'Scoobert'
+    assert scooby.age == 7
+    assert scooby.pet == ''
+    assert scooby.hobbies == ['Eating Scooby Snacks']
 
 
 def test_all_keys_match_names():
