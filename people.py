@@ -15,6 +15,7 @@ def setup_people():
     _add_squanchy(people)
     _add_eeyore(people)
     _add_bat_man(people)
+    _add_muttley(people)
     return people
 
 
@@ -54,6 +55,14 @@ def _add_bat_man(people):
     """ adds oliver """
     new_p = PERSON(first_name='Bat', surname='Man',
                    age=58, pet=None, hobbies=['Justice', 'Seed'])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
+
+def _add_muttley(people):
+    """ adds muttley"""
+    new_p = PERSON(first_name='Muttley', surname='Dog',
+                   age=71, pet='Dick Dastardly', hobbies='Laughing')
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
