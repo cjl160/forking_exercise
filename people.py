@@ -10,7 +10,6 @@ def setup_people():
        that has firstname, surname, age, pet, hobbies items
     """
     people = {}
-    _add_oliver(people)
     _add_road_runner(people)
     _add_squanchy(people)
     _add_eeyore(people)
