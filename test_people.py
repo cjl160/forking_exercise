@@ -9,7 +9,7 @@ def test_oliver():
     assert oliver.hobbies == []
 
 def test_bat_man():
-    Bat_man = setup_people()['Bat_Man']
+    bat_man = setup_people()['Bat_Man']
     assert bat_man.first_name == 'Bat'
     assert bat_man.age == 58
     assert bat_man.hobbies == ['Justice', 'Seed']
