@@ -80,9 +80,9 @@ def _add_scooby(people):
 
 def _add_archer(people):
     """Adds Archer"""
-    new_p = PERSON(first_name = 'Sterling', surname = 'Archer',
-                   age = 36, pet = 'Babou', 
-                   hobbies = ['Drinking', 'Being an ass', 'Super Spy'])
+    new_p = PERSON(first_name='Sterling', surname='Archer',
+                   age=36, pet='Babou',
+                   hobbies=['Drinking', 'Being an ass', 'Super Spy'])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 

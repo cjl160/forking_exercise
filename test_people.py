@@ -9,6 +9,7 @@ def test_oliver():
     assert oliver.pet == 'Rat'
     assert oliver.hobbies == []
 
+
 def test_cartman():
     cartman = setup_people()['Eric_Cartman']
     assert cartman.first_name == 'Eric'
@@ -63,7 +64,6 @@ def test_archer():
 def test_all_keys_match_names():
     for key, person in setup_people().items():
         assert key == f'{person.first_name}_{person.surname}'
-
 
 
 def test_muttley():
