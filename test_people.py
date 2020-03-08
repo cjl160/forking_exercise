@@ -10,6 +10,13 @@ def test_oliver():
     assert oliver.hobbies == []
 
 
+def test_fry():
+    fry = setup_people()['Philip_Fry']
+    assert fry.first_name == 'Philip'
+    assert fry.age == 2040
+    assert fry.hobbies == []
+
+
 def test_cartman():
     cartman = setup_people()['Eric_Cartman']
     assert cartman.first_name == 'Eric'
