@@ -46,6 +46,14 @@ def test_scooby():
     assert scooby.hobbies == ['Eating Scooby Snacks']
 
 
+def test_archer():
+    archer = setup_people()['Sterling_Archer']
+    assert archer.first_name == 'Sterling'
+    assert archer.pet == 'Babou'
+    assert archer.age == 36
+    assert archer.hobbies == ['Drinking', 'Being an ass', 'Super Spy']
+
+
 def test_all_keys_match_names():
     for key, person in setup_people().items():
         assert key == f'{person.first_name}_{person.surname}'
