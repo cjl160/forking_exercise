@@ -2,14 +2,6 @@
 from people import setup_people
 
 
-def test_oliver():
-    oliver = setup_people()['Oliver_Smart']
-    assert oliver.first_name == 'Oliver'
-    assert oliver.age == 21
-    assert oliver.pet == 'Rat'
-    assert oliver.hobbies == []
-
-
 def test_fry():
     fry = setup_people()['Philip_Fry']
     assert fry.first_name == 'Philip'
