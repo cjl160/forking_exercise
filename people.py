@@ -18,6 +18,7 @@ def setup_people():
     _add_muttley(people)
     _add_scooby(people)
     _add_archer(people)
+    _add_cartman(people)
     return people
 
 
@@ -82,6 +83,14 @@ def _add_archer(people):
     new_p = PERSON(first_name = 'Sterling', surname = 'Archer',
                    age = 36, pet = 'Babou', 
                    hobbies = ['Drinking', 'Being an ass', 'Super Spy'])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
+
+def _add_cartman(people):
+    """ adds Cartman """
+    new_p = PERSON(first_name='Eric', surname='Cartman',
+                   age=10, pet='Mr. Kitty', hobbies=[])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
