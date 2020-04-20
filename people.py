@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """people dictionary to showoff namedtuple"""
 from collections import namedtuple
 PERSON = namedtuple('person', 'first_name surname age pet hobbies')
@@ -19,8 +19,17 @@ def setup_people():
     _add_archer(people)
     _add_cartman(people)
     _add_fry(people)
+    _add_jerry(people)
     return people
-# TODO add another person - Jerry
+
+
+def _add_jerry(people):
+    """ adds jerry """
+    new_p = PERSON(first_name='jerry', surname='smith',
+                   age=50, pet='Rat', hobbies=['none'])
+    key = new_p.first_name + '_' + new_p.surname
+    people[key] = new_p
+
 
 def _add_oliver(people):
     """ adds oliver """
