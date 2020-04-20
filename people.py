@@ -25,8 +25,8 @@ def setup_people():
 
 def _add_jerry(people):
     """ adds jerry """
-    new_p = PERSON(first_name='jerry', surname='smith',
-                   age=50, pet='Rat', hobbies=['none'])
+    new_p = PERSON(first_name='Jerry', surname='Smith',
+                   age=50, pet='Rat', hobbies=[])
     key = new_p.first_name + '_' + new_p.surname
     people[key] = new_p
 
@@ -117,6 +117,7 @@ def main():
     people = setup_people()
     for person in people.values():
         pet = person.pet or '(none)'
+      #  print(person.first_name, person.surname, person.age, pet, person.hobbies)
         print(f'{person.first_name:<15} {person.surname:<15} age:{person.age:<5}'
               f'  pet:{pet:<15} hobbies: {person.hobbies}')
 

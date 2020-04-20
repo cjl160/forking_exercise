@@ -3,10 +3,10 @@ from people import setup_people
 
 
 def test_jerry():
-    jerry = setup_people()['Jerry_smith']
+    jerry = setup_people()['Jerry_Smith']
     assert jerry.first_name == 'Jerry'
     assert jerry.age == 50
-    assert jerry.hobbies == ['none']
+    assert jerry.hobbies == []
 
 
 def test_fry():
