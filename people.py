@@ -20,7 +20,7 @@ def setup_people():
     _add_cartman(people)
     _add_fry(people)
     return people
-
+# TODO add another person - Jerry
 
 def _add_oliver(people):
     """ adds oliver """
